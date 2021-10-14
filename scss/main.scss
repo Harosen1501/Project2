@@ -3,7 +3,7 @@ $header-color: #f7f5f11f;
 * {
     box-sizing: border-box;
   }
-  body {
+  body{
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -254,16 +254,16 @@ $header-color: #f7f5f11f;
     .header {
         width: 100%;
         background-color: $header-color;
-      }
-    
-      ul {
-    height: 100px;
-    justify-content: flex-end;
-}
+    }
+        ul {
+    height: 35px;
+    justify-content: end !important;
+
 
     a {
         padding: 20px 30px;
-        font-size: 14pt;
+        font-size: 1rem;
+      }
     }
 
   li a:hover,
@@ -272,9 +272,21 @@ $header-color: #f7f5f11f;
     text-decoration: underline;
   }
 
+    .menu {
+      clear: none;
+      max-height: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+    }
 
 .menu-icon {
     display: none;
+}
+
+.hem-text {
+    font-size: 1rem !important;
 }
     .personal-container {
     flex-direction: row;
